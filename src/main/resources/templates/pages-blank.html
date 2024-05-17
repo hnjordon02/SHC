@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" 
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorate="_layout">
+
+<head>
+   <title>Blank page</title>
+</head>
+
+<div layout:fragment="content">
+
+  <!-- Incluir el contenido específico de esta página -->
+  <div class="pagetitle">
+    <h1>Blank Page</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Pages</li>
+        <li class="breadcrumb-item active">Blank</li>
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Example Card</h5>
+            <p>This is an example page with no content. You can use it as a starter for your custom pages.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Example Card</h5>
+            <p>This is an example page with no content. You can use it as a starter for your custom pages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <th:block layout:fragment="script">
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+         <!-- Funciones del modulo planning -->
+        <script type="text/javascript" th:src="@{/assets/js/blank.js}"></script>
+        <!-- DevExtreme library -->
+<!--        <script type="text/javascript" th:src="@{/js/devExtreme/dx.all.js}"></script>-->
+         <!-- Funciones para poder exportar -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.4.0/polyfill.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.0.1/exceljs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    </th:block>
+
+</body>
+
+</html>
